@@ -1,0 +1,35 @@
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    height: 2.25rem;
+    width: 2.25rem;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .header-button:hover {
+    background: #2d3748;
+    color: #e2e8f0;
+  }
+  
+
+  .logo {
+    font-family: "Arial", sans-serif; /* Replace with your desired font */
+    font-weight: 600; /* Adjust the font weight to make it bold */
+    font-size: 1.5rem; /* Adjust the font size */
+    color: #000; /* Set text color */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    display: flex;
+    align-items: center; /* Center align text and dropdown */
+  }
+  
+  .logo::after {
+    content: "▼"; /* Dropdown icon */
+    font-size: 0.8rem; /* Adjust the size of the arrow */
+    margin-left: 8px; /* Space between text and arrow */
+    color: #000; /* Arrow color */
+  }
+  

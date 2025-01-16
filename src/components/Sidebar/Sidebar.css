@@ -1,0 +1,21 @@
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #34495e;
+}
+
+.active-link {
+  background-color: #1abc9c;
+  font-weight: bold;
+}
+
+.sidebar a svg {
+  margin-right: 10px;
+}

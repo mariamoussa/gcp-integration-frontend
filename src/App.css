@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  flex-direction: column; /* Header at the top */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #1abc9c;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Makes it stay at the top on scroll */
+  top: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.layout {
+  display: flex;
+  flex: 1; /* Allows the sidebar and main content to fill the remaining height */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.main-content {
+  flex: 1; /* Occupies the remaining space */
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
